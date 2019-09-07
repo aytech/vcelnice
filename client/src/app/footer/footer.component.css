@@ -1,0 +1,17 @@
+.footer {
+  background-color: #ee9c22;
+  background-color: rgba(238, 156, 34, 0.9);
+  bottom: 0;
+  min-width: 400px;
+  position: absolute;
+  width: 100%;
+}
+
+.footer div {
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+.android-logo {
+  color: #A4C639;
+}

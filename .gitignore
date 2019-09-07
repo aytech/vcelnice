@@ -1,0 +1,58 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+client/disc
+client/tmp
+client/out-tsc
+
+# dependencies
+client/node_modules
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+server/**/__pycache__
+server/vcelnice/common/.credentials
+server/vcelnice/common/auth.dat
+server/vcelnice/common/client_secret.json
+server/vcelnice/logs
+server/vcelnice/media
+server/vcelnice/static_root
+server/vcelnice/static/bower
+server/venv
+server/locale/cs/LC_MESSAGES/django.mo
+server/data/db.sqlite3-journal
+server/data/db.sqlite3
+server/**/*.mp4
+server/**/*.ogv
+server/**/*.webm

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="container">
+      <h2 class="text-center webcolor title">Ceník</h2>
+      <hr>
+      <div class="recipes" *ngIf="prices.length">
+        <div class="row" *ngFor="let price of prices; let i = index">
+          <div class="col-4 text-center image">
+            <img class="align-self-start mr-3 img-thumbnail" src="{{ price.image }}" alt="{{ price.title }}">
+          </div>
+          <div class="col-8">
+            <ul class="list-group">
+              <li class="list-group-item text-center">
+                <strong>
+                  {{ price.title }}
+                </strong>
+              </li>
+              <li class="list-group-item">
+                <span class="align-middle strong">
+                  {{ price.price }} Kč
+                  <span *ngIf="price.weight">
+                    ({{ price.weight }})
+                  </span>
+                </span>
+                <button type="button" class="btn btn-warning float-right" (click)="openReservationForm(i)">
+                  Rezervovat
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12" *ngIf="!prices.length">
+        <div class="spinner" *ngIf="loading">
+          <img src="/assets/spinner_horizontal.svg" alt="Loading...">
+        </div>
+        <div class="alert alert-danger text-center" role="alert" *ngIf="!loading">
+          <strong>ceníky nenalezeny</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

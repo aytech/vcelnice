@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  vcelnice-nw:
+    driver: bridge
+
+services:
+  vcelnice-backend:
+    build:
+      context: ./server
+      dockerfile: ../Dockerfile-dev
+    container_name: vcelnice-backend
+    networks:
+      - vcelnice-nw
+    volumes:
+      - /home/oleg/sources/vcelnice/server:/app
+      - /home/oleg/logs/vcelnice:/app/vcelnice/logs
+    ports:
+      - 8080:8080

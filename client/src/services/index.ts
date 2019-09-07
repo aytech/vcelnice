@@ -1,0 +1,9 @@
+export { HomeService } from './home.service';
+export { NewsService } from './news.service';
+export { PhotoService } from './photo.service';
+export { PriceService } from './price.service';
+export { VideoService } from './video.service';
+export { CertificateService } from './certificate.service';
+export { RecipeService } from './recipe.service';
+export { ContactService } from './contact.service';
+export { GenericService } from './generic.service';

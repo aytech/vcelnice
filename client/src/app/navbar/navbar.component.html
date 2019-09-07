@@ -1,0 +1,108 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" routerLink="/">
+    <!--suppress HtmlUnknownTarget -->
+    <img src="/assets/images/bee_news.png" alt="" title="" width="50" height="35">
+  </a>
+  <button
+    #navbarToggle
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    #menu
+    class="collapse navbar-collapse"
+    id="navbarCollapse">
+    <div class="container">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            [queryParams]="{lang: lang}">
+            Domů
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/foto"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Foto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/video"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Video
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/certifikaty"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Certifikáty
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/region"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Region
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/novinky"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Novinky
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/recepty"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Recepty
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/cenik"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Ceník
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/kontakt"
+            routerLinkActive="active"
+            [queryParams]="{lang: lang}">
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
