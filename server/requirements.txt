@@ -18,7 +18,7 @@ lorem-ipsum-generator==0.3
 Markdown==2.6.10
 oauth2client==1.5.2
 olefile==0.44
-Pillow==4.3.0
+Pillow==6.2.0
 pyasn1==0.1.9
 pyasn1-modules==0.0.8
 pytz==2017.3
