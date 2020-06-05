@@ -2,7 +2,7 @@ apiclient==1.0.2
 bleach==1.4.2
 certifi==2017.11.5
 chardet==3.0.4
-Django==2.0
+Django==2.2.13
 django-common-helpers==0.7.0
 django-debug-toolbar==1.4
 django-filter==1.1.0
